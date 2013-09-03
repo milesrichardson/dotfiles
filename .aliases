@@ -19,6 +19,8 @@ alias m="mate ."
 alias s="subl ."
 alias o="open"
 alias oo="open ."
+alias ll="ls -al"
+alias subl='"/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
