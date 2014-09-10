@@ -11,8 +11,7 @@ alias c="cd ~/code"
 alias 426="cd ~/code/school/cs426"
 alias 323="cd ~/code/school/cs323/cs323"
 
-
-# Shotcits - Commonly used commands
+# Shotcuts - Commonly used commands
 alias g="git"
 alias s="subl ."
 alias v="vim"
