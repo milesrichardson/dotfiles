@@ -40,3 +40,23 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+NETID="mjr78"
+alias zoo="ssh -X ${NETID}@node.zoo.cs.yale.edu"
+zoocp() {
+  for dir; do true; done
+  length=$(($#-1))
+  array=${@:1:length}
+  scp $array ${NETID}@node.zoo.cs.yale.edu:/home/accts/${NETID}/$dir
+}
+export PATH=/usr/local/bin:$PATH
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+# startup virtualenv-burrito
+if [ -f $HOME/.venvburrito/startup.sh ]; then
+    . $HOME/.venvburrito/startup.sh
+fi
+
+# Lazy C++ (auto header file expansion, etc.)
+alias lzz=$HOME'/code/personal/dotfiles/bin/lzz'
