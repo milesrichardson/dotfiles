@@ -60,3 +60,5 @@ fi
 
 # Lazy C++ (auto header file expansion, etc.)
 alias lzz=$HOME'/code/personal/dotfiles/bin/lzz'
+
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl

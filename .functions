@@ -251,3 +251,8 @@ function gi() {
 	local IFS=,
 	eval npm install --save-dev grunt-{"$*"}
 }
+
+# Look up dashdocs
+function dash () {
+	open dash://"$@";
+}
