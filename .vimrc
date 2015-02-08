@@ -59,6 +59,10 @@ set noerrorbells
 set nostartofline
 " Show the cursor position
 set ruler
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+highlight WarnLength ctermbg=yellow ctermfg=white guibg=#592929
+match WarnLength /\%61v.\+/
 " Don’t show the intro message when starting Vim
 set shortmess=atI
 " Show the current mode
