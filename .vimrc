@@ -1,11 +1,8 @@
-" 'K=============== Vundle =============== "
-" set the runtime path to include Vundle and initialize
-set nocompatible              " be iMproved, reqquired
-filetype off                  " required
-
 execute pathogen#infect()
+set nocompatible
+filetype off
+
 syntax on
-filetype plugin indent on
 
 
 " ============ default Syntastic settings ============= "
@@ -75,7 +72,6 @@ nnoremap <unique> : ;
 
 " highlight search results
 set hlsearch
-nnoremap jk :noh<return>jk
 
 " allow cursor to be one char past EOL
 set virtualedit=onemore
