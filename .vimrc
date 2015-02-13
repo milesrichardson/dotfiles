@@ -61,8 +61,6 @@ if has("mouse")
     set mouse=a
 endif
 
-" map 'jk' to <Esc>
-:imap jk <Esc>
 
 " show line numbers
 set nu
