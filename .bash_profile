@@ -64,3 +64,6 @@ alias lzz=$HOME'/code/personal/dotfiles/bin/lzz'
 # Something weird about subl requires this....
 rm ~/bin/subl
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
