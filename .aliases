@@ -7,9 +7,6 @@ alias g="git"
 alias s="subl ."
 alias v="vim"
 alias ll="ls -al"
-#alias d="docker"
-#alias dr="docker run"
-#alias db="docker build"
 
 # Not-common-enough commands
 alias h="history"
@@ -28,11 +25,6 @@ alias -- -="cd -"
 #
 # Networking
 #
-
-# Ip meta data
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en1"
-alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
@@ -146,4 +138,3 @@ command -v grunt > /dev/null && alias grunt="grunt --stack"
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
-#alias dclean="docker rm -f $(docker ps -qa)"
