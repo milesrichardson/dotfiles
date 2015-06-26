@@ -7,6 +7,9 @@ alias g="git"
 alias s="subl ."
 alias v="vim"
 alias ll="ls -al"
+alias gs="git status"
+alias gc="git commit"
+alias ga="git add"
 
 # Not-common-enough commands
 alias h="history"
